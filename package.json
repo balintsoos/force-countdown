@@ -1,0 +1,29 @@
+{
+  "name": "SWcountdown",
+  "authors": "Balint Soos <soosbalint95@gmail.com>",
+  "contributors": [
+    {
+      "name": "Balint Soos",
+      "email": "soosbalint95@gmail.com",
+      "url": "http://balintsoos.com/"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "cssnano": "^3.3.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-postcss": "^6.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.6",
+    "iconate": "^0.2.5",
+    "jquery": "^2.1.4",
+    "knockout": "^3.3.0",
+    "waypoints": "^4.0.0"
+  }
+}

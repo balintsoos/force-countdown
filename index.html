@@ -5,23 +5,27 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="build/css/style.min.css" />
 </head>
 <body>
 	<div class="container">
-		<img class="logo" src="sw-logo.png">
-		<div class="countdown">
-			<span id="days"></span>
-			<span> days</span>
-			<span id="hours"></span>
-			<span> hours</span>
-			<span id="minutes"></span>
-			<span> minutes</span>
-			<span id="seconds"></span>
-			<span> seconds</span>
-		</div>
+		<img class="logo" src="build/css/sw-logo.png">
+		<table class="countdown">
+			<tr class="values">
+				<td><span id="days"></span></td>
+				<td><span id="hours"></span></td>
+				<td><span id="minutes"></span></td>
+				<td><span id="seconds"></span></td>
+			</tr>
+			<tr class="labels">
+				<td><span>days</span></td>
+				<td><span>hours</span></td>
+				<td><span>minutes</span></td>
+				<td><span>seconds</span></td>
+			</tr>
+		</table>
 	</div>
-	<script type="text/javascript" src="Countdown.js"></script>
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="build/js/Countdown.js"></script>
+	<script type="text/javascript" src="build/js/app.js"></script>
 </body>
 </html>

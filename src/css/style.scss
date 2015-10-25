@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'SWFont';
+  src: url('SerifGothicBQ-Heavy.otf') format('truetype');
+}
+
+body {
+	font-family: 'SWFont', sans-serif;
+	background-image: url("space-pattern.jpg");
+	background-repeat: repeat;
+}
+
+.container {
+	width: 100%;
+	text-align: center;
+}
+
+.logo {
+	position: fixed;
+	top: 0;
+	width: 30%;
+}
+
+.countdown {
+	color: #E6B229;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.values {
+	font-size: 5rem;
+}
+
+.values td {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.values td span {
+	color: #fff;
+}
+
+.labels {
+	font-size: 1.5rem;
+}
+
+.labels td span {
+	text-transform: uppercase;
+}
