@@ -63,13 +63,6 @@ gulp.task('copy:FONT', function () {
     .pipe(gulp.dest('./build'));
 });
 
-
-// Video copy
-gulp.task('copy:VIDEO', function () {
-  gulp.src('./src/video/*.mp4')
-    .pipe(gulp.dest('./build/video'));
-});
-
 // Watchers
 gulp.task('watch', ['default'], function () {
   
@@ -96,4 +89,4 @@ gulp.task('watch', ['default'], function () {
     });
 });
 
-gulp.task('default', ['clean', 'build:JS', 'build:HTML', 'build:CSS', 'copy:IMG', 'copy:FONT', 'copy:VIDEO']);
+gulp.task('default', ['clean', 'build:JS', 'build:HTML', 'build:CSS', 'copy:IMG', 'copy:FONT']);
