@@ -1,48 +1,113 @@
+@import 'reset';
+
 @font-face {
   font-family: 'SWFont';
-  src: url('SerifGothicBQ-Heavy.otf') format('truetype');
+  src: url('../SerifGothicBQ-Heavy.otf') format('truetype');
+}
+
+html, body {
+  height: 100%;
+  min-height: 800px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-	font-family: 'SWFont', sans-serif;
-	background-image: url("space-pattern.jpg");
+  font-size : 1.6rem;
+  font-family: 'SWFont', sans-serif;
+	background-image: url("../img/space-pattern.jpg");
 	background-repeat: repeat;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .container {
 	width: 100%;
-	text-align: center;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
 }
 
 .logo {
-	position: fixed;
-	top: 0;
-	width: 30%;
+	height: 200px;
+	margin: 15px;
 }
 
-.countdown {
-	color: #E6B229;
+.clock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.clock-piece {
+	width: 200px;
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.value {
+	width: 100%;
+	font-size: 10rem;
 	text-align: center;
-	margin: 0 auto;
-}
-
-.values {
-	font-size: 5rem;
-}
-
-.values td {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.values td span {
 	color: #fff;
 }
 
-.labels {
-	font-size: 1.5rem;
+.label {
+	width: 100%;
+	font-size: 3rem;
+	text-align: center;
+	color: #E6B229;
+	text-transform: uppercase;
 }
 
-.labels td span {
-	text-transform: uppercase;
+footer {
+	position: relative;
+	height: 200px;
+	color: #fff;
+	margin: 15px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 1300px) {
+	.logo {
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.logo {
+		height: 100px;
+	}
+	.clock {
+		flex-direction: column;
+	}
+	.value {
+		font-size: 7rem;
+	}
+	.label {
+		font-size: 2rem;
+	}
 }

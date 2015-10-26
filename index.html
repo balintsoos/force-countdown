@@ -7,23 +7,30 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="build/css/style.min.css" />
 </head>
-<body>
+<body class="no-select">
 	<div class="container">
-		<img class="logo" src="build/img/sw-logo.png">
-		<table class="countdown">
-			<tr class="values">
-				<td><span id="days"></span></td>
-				<td><span id="hours"></span></td>
-				<td><span id="minutes"></span></td>
-				<td><span id="seconds"></span></td>
-			</tr>
-			<tr class="labels">
-				<td><span>days</span></td>
-				<td><span>hours</span></td>
-				<td><span>minutes</span></td>
-				<td><span>seconds</span></td>
-			</tr>
-		</table>
+		<img class="logo" src="build/img/sw-logo.png">	
+		<div class="clock">
+			<div class="clock-piece">
+				<div class="value"><span id="days"></span></div>
+				<div class="label"><span>days</span></div>
+			</div>
+			<div class="clock-piece">
+				<div class="value"><span id="hours"></span></div>
+				<div class="label"><span>hours</span></div>
+			</div>
+			<div class="clock-piece">
+				<div class="value"><span id="minutes"></span></div>
+				<div class="label"><span>minutes</span></div>
+			</div>
+			<div class="clock-piece">
+				<div class="value"><span id="seconds"></span></div>
+				<div class="label"><span>seconds</span></div>
+			</div>
+		</div>
+		<footer>
+			<span>Created by Balint Soos</span>
+		</footer>	
 	</div>
 	<script type="text/javascript" src="build/js/Countdown.js"></script>
 	<script type="text/javascript" src="build/js/app.js"></script>

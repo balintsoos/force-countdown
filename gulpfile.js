@@ -17,15 +17,15 @@ gulp.task('clean', function () {
 
 // JS build
 gulp.task('build:JS', function () {
-  gulp.src('./src/js/main.js')
-    .pipe(rename('app.js'))
-    .pipe(browserify({
-      insertGlobals : false,
-    }))
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(rename('app.min.js'))
-    .pipe(sourcemaps.write('.'))
+  gulp.src('./src/js/*.js')
+    // .pipe(rename('app.js'))
+    // .pipe(browserify({
+    //   insertGlobals : false,
+    // }))
+    // .pipe(sourcemaps.init())
+    // .pipe(uglify())
+    // .pipe(rename('app.min.js'))
+    // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./build/js'));
 });
 
@@ -57,6 +57,12 @@ gulp.task('copy:IMG', function () {
     .pipe(gulp.dest('./build/img'));
 });
 
+// Font copy
+gulp.task('copy:FONT', function () {
+  gulp.src('./src/*.otf')
+    .pipe(gulp.dest('./build'));
+});
+
 // Watchers
 gulp.task('watch', ['default'], function () {
   
@@ -83,4 +89,4 @@ gulp.task('watch', ['default'], function () {
     });
 });
 
-gulp.task('default', ['clean', 'build:JS', 'build:HTML', 'build:CSS', 'copy:IMG']);
+gulp.task('default', ['clean', 'build:JS', 'build:HTML', 'build:CSS', 'copy:IMG', 'copy:FONT']);
