@@ -1,5 +1,10 @@
 @import 'reset';
 
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
 @font-face {
   font-family: 'SWFont';
   src: url('../SerifGothicBQ-Heavy.otf') format('truetype');
@@ -89,6 +94,8 @@ footer {
 	margin: 15px;
 	display: flex;
 	flex-direction: column-reverse;
+	font-family: Verdana, sans-serif;
+	font-size: 1rem;
 }
 
 @media only screen and (max-width: 1300px) {
