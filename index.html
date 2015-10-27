@@ -9,7 +9,7 @@
 	<meta property="og:title" content="The Force Awakens Countdown" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="The Force Awakens Countdown"/>
-	<meta property="og:url" content="http://www.balintsoos.com/SWcountdown" />
+	<meta property="og:url" content="http://forceawakens.balintsoos.com" />
 	<meta property="og:image" content="http://balintsoos.com/SWcountdown/sw.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1000" />
@@ -26,6 +26,14 @@
 	</script>
 </head>
 <body class="no-select">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="video">
 		<video autoplay loop muted>
 			<source src="build/video/SW.mp4" type="video/mp4">
@@ -52,7 +60,14 @@
 			</div>
 		</div>
 		<footer>
-			<a href="http://www.balintsoos.com/"><span>Site created by Balint Soos © & ™ Lucasfilm Ltd. All Rights Reserved</span></a>
+			<a href="http://www.balintsoos.com/" class="copyright">
+				<span>Site created by Balint Soos © & ™ Lucasfilm Ltd. All Rights Reserved</span>
+			</a>
+			<div class="social">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://forceawakens.balintsoos.com" data-text="The Force Awakens Countdown" data-via="BalintSoos" data-hashtags="TheForceAwakens">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<div class="fb-share-button" data-href="http://forceawakens.balintsoos.com" data-layout="button_count"></div>
+			</div>
 		</footer>	
 	</div>
 	<script type="text/javascript" src="build/js/Countdown.js"></script>

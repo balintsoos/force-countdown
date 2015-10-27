@@ -114,9 +114,21 @@ footer {
 	margin: 30px 0 15px 0;
 	display: flex;
 	flex-direction: column-reverse;
+	align-items: center;
 	font-family: Verdana, sans-serif;
 	font-size: 1rem;
 	text-align: center;
+
+	.social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+
+		.twitter-share-button {
+			margin-right: 10px; 
+		}
+	}
 }
 
 @media only screen and (max-width: 1300px) {
