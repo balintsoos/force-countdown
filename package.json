@@ -1,5 +1,8 @@
 {
-  "name": "SWcountdown",
+  "name": "force-countdown",
+  "version": "1.0.0",
+  "description": "The Countdown has begun. Have you felt it?",
+  "homepage": "http://forcecountdown.com/",
   "authors": "Balint Soos <soosbalint95@gmail.com>",
   "contributors": [
     {
@@ -8,6 +11,13 @@
       "url": "http://balintsoos.com/"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balintsoos/force-countdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/balintsoos/force-countdown/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
@@ -21,9 +31,6 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.4.2",
     "gulp-util": "^3.0.6",
-    "iconate": "^0.2.5",
-    "jquery": "^2.1.4",
-    "knockout": "^3.3.0",
-    "waypoints": "^4.0.0"
+    "knockout": "^3.3.0"
   }
 }

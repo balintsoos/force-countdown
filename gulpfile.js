@@ -17,15 +17,15 @@ gulp.task('clean', function () {
 
 // JS build
 gulp.task('build:JS', function () {
-  gulp.src('./src/js/*.js')
-    // .pipe(rename('app.js'))
-    // .pipe(browserify({
-    //   insertGlobals : false,
-    // }))
-    // .pipe(sourcemaps.init())
-    // .pipe(uglify())
-    // .pipe(rename('app.min.js'))
-    // .pipe(sourcemaps.write('.'))
+  gulp.src('./src/js/app.js')
+    .pipe(rename('app.js'))
+    .pipe(browserify({
+      insertGlobals : false,
+    }))
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(rename('app.min.js'))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./build/js'));
 });
 

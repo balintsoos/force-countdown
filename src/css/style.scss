@@ -2,11 +2,6 @@
 
 $SW-gold: #E6B229;
 
-a {
-	text-decoration: none;
-	color: currentColor;
-}
-
 @font-face {
   font-family: 'SWFont';
   src: url('../SerifGothicBQ-Heavy.otf') format('truetype');
@@ -34,6 +29,7 @@ body {
   font-family: 'SWFont', sans-serif;
 	background-image: url("../img/space-pattern.jpg");
 	background-repeat: repeat;
+	background-color: black;
 }
 
 .no-select {
@@ -45,17 +41,28 @@ body {
   user-select: none;
 }
 
-.video {
-	position: absolute;
-	top: 0;
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+.main-section {
+	position: relative;
 	width: 100%;
 	height: 100%;
-	z-index: 1;
+}
+
+.video {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-bottom: 2px solid $SW-gold;
 }
 
 video {
 	width: 100%;
-	border-bottom: 3px solid $SW-gold;
+	height: 100%;
+	object-fit: cover;
 }
 
 .container {
@@ -68,7 +75,7 @@ video {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: nowrap;
-	z-index: 2;
+	z-index: 999;
 }
 
 .logo {
@@ -107,7 +114,7 @@ video {
 	text-shadow: 1px 0px 2px rgba(150, 150, 150, 0.7);
 }
 
-footer {
+.video-footer {
 	position: relative;
 	height: 200px;
 	color: #fff;
@@ -116,7 +123,7 @@ footer {
 	flex-direction: column-reverse;
 	align-items: center;
 	font-family: Verdana, sans-serif;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	text-align: center;
 
 	.social {
@@ -151,6 +158,12 @@ footer {
 		font-size: 2rem;
 	}
 	.video {
+		border-bottom: 2px solid transparent;
+	}
+	video {
 		display: none;
+	}
+	.video-footer {
+		height: 100px;
 	}
 }

@@ -1,5 +1,5 @@
 
-function Countdown (date) {
+module.exports = function (date) {
   var Countdown = {};
   
   Countdown.end = new Date(date);
