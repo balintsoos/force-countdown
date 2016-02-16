@@ -1,3 +1,3 @@
 var Countdown = require('./Countdown.js');
-var StarWars = new Countdown("December 18, 2015 00:00:01");
+var StarWars = new Countdown("Februar 18, 2016 00:00:01");
 StarWars.start();
