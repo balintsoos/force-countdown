@@ -96,4 +96,10 @@ gulp.task('watch', ['default'], function () {
     });
 });
 
-gulp.task('default', ['clean', 'build:JS', 'build:HTML', 'build:CSS', 'copy:IMG', 'copy:FONT', 'copy:VIDEO']);
+gulp.task('publish', function () {
+  gulp.src('./build/**/*')
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', ['build']);
+gulp.task('build', ['clean', 'build:JS', 'build:HTML', 'build:CSS', 'copy:IMG', 'copy:FONT', 'copy:VIDEO']);
