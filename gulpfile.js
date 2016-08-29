@@ -31,7 +31,8 @@ gulp.task('build:JS', function () {
 
 // HTML build
 gulp.task('build:HTML', function () {
-  //
+  gulp.src('./src/*.html')
+    .pipe(gulp.dest('./build'));
 });
 
 // Sass and CSS build
@@ -72,7 +73,7 @@ gulp.task('copy:VIDEO', function () {
 
 // Watchers
 gulp.task('watch', ['default'], function () {
-  
+
   function log (event) {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   }
@@ -82,7 +83,7 @@ gulp.task('watch', ['default'], function () {
     .on('change', function (event) {
       log(event);
     });
-  
+
   // watch HTML
   gulp.watch('./*.html', ['build:HTML'])
     .on('change', function (event) {
